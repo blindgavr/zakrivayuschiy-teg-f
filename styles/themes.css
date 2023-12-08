@@ -68,11 +68,12 @@
         #000 2px,
         transparent 2px,
         transparent 4px
-      );
+      ),
+      linear-gradient(to bottom, #007f0c, #004306);
     --main-font: Inter-Variable;
     --accent-font: "Press Start 2P";
     --main-font-weight-title: 700;
     --main-font-weight-text: 400;
-    --like-text-color: #fff;
+    --like-text-color: #00cc14;
   }
 }

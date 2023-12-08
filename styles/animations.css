@@ -13,6 +13,21 @@
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
 
+.like-icon .core {
+  fill: transparent;
+  transition: fill 0.3s 0.03s linear;
+}
+
+.like-icon .main-body {
+  fill: transparent;
+  transition: fill 0.3s linear;
+}
+
+.like-icon .contour {
+  fill: var(--accent-color);
+  transition: fill 0.1s linear;
+}
+
 @keyframes menu__item {
   0% {
     inset-inline-start: -20px;
@@ -27,37 +42,37 @@
 
 .like-icon:hover .core {
   fill: var(--accent-color);
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:hover .main-body {
   fill: var(--accent-color);
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon:active .core {
   fill: #ff0000;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon:active .main-body {
   fill: #ff0000;
-  transition: fill 0.3s 0.05s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .core {
   fill: #ff0000;
-  transition: fill 0.3s;
+  transition: fill 0.3s linear;
 }
 
 .like-icon.is-liked .main-body {
   fill: #ff0000;
-  transition: fill 0.3s 0.03s;
+  transition: fill 0.3s 0.05s linear;
 }
 
 .like-icon.is-liked .contour {
   fill: #ff0000;
-  transition: fill 0.3s 0.06s;
+  transition: fill 0.3s 0.06s linear;
 }
 
 @keyframes heart-scale {
@@ -75,7 +90,7 @@
 }
 
 .like-icon.is-liked {
-  animation: heart-scale 0.3s 0.1s ease-in;
+  animation: heart-scale 0.3s 0.1s ease-in alternate;
 }
 
 @keyframes heart-spark {
@@ -93,5 +108,5 @@
 }
 
 .like-icon.is-liked .sparks {
-  animation: heart-spark 0.3s 0.1s ease-in;
+  animation: heart-spark 0.3s 0.3s ease-in alternate;
 }
