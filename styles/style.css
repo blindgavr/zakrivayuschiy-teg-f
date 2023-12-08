@@ -140,7 +140,6 @@
   padding: 6px 10px 4px;
   background-color: var(--background-color);
   font-size: 18px;
-  font-weight: var(--main-font-weight-title);
   font-variation-settings: "wght" var(--main-font-weight-title);
 }
 
@@ -174,6 +173,8 @@
     (-webkit-text-stroke: 1px var(--background-color))
 ) {
   .watermark {
+    text-stroke-width: 1px;
+    text-stroke-color: var(--background-color);
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: var(--background-color);
     text-shadow: none;
@@ -190,7 +191,6 @@
 
 .card__text {
   font-size: 18px;
-  font-weight: var(--main-font-weight-text);
   font-variation-settings: "wght" var(--main-font-weight-text);
 }
 
@@ -274,8 +274,8 @@
 .save-button {
   gap: 8px;
   align-self: center;
-  padding: 15px 20px;
-  width: clamp(19.125rem, 18.4868rem + 2.723vw, 20.9375rem);
+  padding: 15px 15px;
+  width: clamp(19.375rem, 18.7368rem + 2.723vw, 21.1875rem);
 }
 
 .floppy-icon {
@@ -385,7 +385,6 @@
   .save-button {
     flex-direction: column;
     gap: 9px;
-    padding: 15px 15px;
   }
 
   .floppy-icon {
